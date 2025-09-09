@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-edge3" %}
-{% set version = "1.1.3" %}
+{% set version = "1.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_edge3-{{ version }}.tar.gz
-  sha256: 11a9273e33091fa93fbbe82e953d370d55ebe76f73eafe3a8789f43533918be6
+  sha256: b4eb8eaa2738ce725e4ff91d6c67249002156aca64641d3077dfeafe78ec0c9d
 
 build:
   noarch: python
