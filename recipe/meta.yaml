@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-edge3" %}
-{% set version = "1.4.1" %}
-{% set python_min = "3.10" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_edge3-{{ version }}.tar.gz
-  sha256: 3a7017be4f831b4d8c97c627783ee0e69fd10207750dc8b92fa73b5302077a27
+  sha256: 3ba1555af434e290dcc4d29581cef8d5bbf45d49df86ca1ae5c4cafd229f46e5
 
 build:
   noarch: python
@@ -40,7 +39,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-edge3 for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/edge3/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-edge3/stable/index.html
   dev_url: https://github.com/apache/airflow/
