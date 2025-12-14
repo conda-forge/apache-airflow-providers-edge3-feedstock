@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-edge3" %}
-{% set version = "1.6.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_edge3-{{ version }}.tar.gz
-  sha256: 28f78781d938373a325079148804f0ae5f512ccc8caafe0630930c2b7186c243
+  sha256: 8df4bf3d21ba55758a7b00826b8bfbe99a682eba707b89fd90527d99ee9bef20
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.11.0,!=3.1.0
-    - apache-airflow-providers-common-compat >=1.10.0
+    - apache-airflow >=3.0.0,!=3.1.0
+    - apache-airflow-providers-common-compat >=1.10.1
     - pydantic >=2.11.0
     - retryhttp >=1.2.0,!=1.3.0
 
