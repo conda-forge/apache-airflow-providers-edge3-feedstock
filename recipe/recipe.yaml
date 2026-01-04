@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.edge3
+      - airflow.providers.edge3
       pip_check: true
       python_version: ${{ python_min }}.*
 
