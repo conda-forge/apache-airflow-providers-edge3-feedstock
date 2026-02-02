@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-edge3
-  version: "3.0.0"
+  version: 3.0.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_edge3-${{ version }}.tar.gz
-  sha256: 46d51270c27f6294bdbe1da326400352319953441c7439ed97343276664d193c
+  sha256: d8812a644ad561b25853dd1335e6d866fa6a3c3d8398821abaf0e903b55d0de8
 
 build:
   noarch: python
@@ -23,12 +23,11 @@ requirements:
   run:
     - python >=${{ python_min }}
     - apache-airflow >=3.0.0,!=3.1.0
-    - apache-airflow-providers-common-compat >=1.12.0
+    - apache-airflow-providers-common-compat >=1.13.0
     - pydantic >=2.11.0
     - retryhttp >=1.4.0
     - aiofiles >=23.2.0
     - aiohttp >=3.9.2
-
 tests:
   - python:
       imports:
