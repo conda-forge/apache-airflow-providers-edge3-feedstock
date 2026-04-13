@@ -24,7 +24,7 @@ requirements:
     - pathspec ==1.0.4
     - pluggy ==1.6.0
     # for all python to stay noarch: python
-    - tomli ==2.4.0
+    - tomli ==2.4.1
     - trove-classifiers ==2026.1.14.14
   run:
     - python >=${{ python_min }}
@@ -40,7 +40,9 @@ tests:
       imports:
         - airflow.providers.edge3
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/apache/airflow/
