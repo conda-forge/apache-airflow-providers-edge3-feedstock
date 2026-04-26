@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-edge3
-  version: "3.4.0"
+  version: "3.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_edge3-${{ version }}.tar.gz
-  sha256: 900f8a7954fc1308f3ed57ae88d927831959201094022e22925f86a169a6fb58
+  sha256: 56c51bac393ab27fff5716ee990388f05f50860bd99e919df9d2680130d90f86
 
 build:
   noarch: python
