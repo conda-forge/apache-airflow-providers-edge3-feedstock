@@ -20,12 +20,12 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling ==1.29.0
-    - packaging ==26.1
-    - pathspec ==1.0.4
+    - packaging ==26.2
+    - pathspec ==1.1.1
     - pluggy ==1.6.0
     # for all python to stay noarch: python
     - tomli ==2.4.1
-    - trove-classifiers ==2026.1.14.14
+    - trove-classifiers ==2026.4.28.13
   run:
     - python >=${{ python_min }}
     - apache-airflow >=3.0.0,!=3.1.0
