@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-edge3
-  version: "5.1.0"
+  version: "5.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_edge3-${{ version }}.tar.gz
-  sha256: 125921c1765990e55fdee0d72eb501e8cd318d550e3fe1203d0f4a2bf6297e43
+  sha256: 26186fe851ff8fa5b9aed7a5f227a990f26eb98e5869b41c266e086c83171a5c
 
 build:
   noarch: python
@@ -19,11 +19,11 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - hatchling ==1.32.4
+    - hatchling ==1.33.0
     - packaging ==26.3
     - pathspec ==1.1.1
-    - pluggy ==1.6.0
-    - tomlkit ==0.15.1
+    - pluggy ==1.7.0
+    - tomlkit ==0.15.2
     - trove-classifiers ==2026.9.21.13
   run:
     - python >=${{ python_min }}
